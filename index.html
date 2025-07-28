@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Day #10 - Weather App | AsmrProg</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Search -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location" />
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- Not Found -->
+        <div class="not-found">
+            <img src="images/404.png" alt="Not Found" />
+            <p>Oops! Invalid location :/</p>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-wrapper">
+            <!-- Weather Info -->
+            <div class="left-panel">
+                <div class="weather-box">
+                    <img src="" alt="Weather Icon" />
+                    <p class="temperature"></p>
+                    <p class="description"></p>
+                </div>
+
+                <!-- Weather Details -->
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-water"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forecast -->
+            <div class="right-panel">
+                <div class="forecast" style="display: none;">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-container">
+                        <!-- JS inserts forecast cards -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="index.js"></script>
+</body>
+</html>
